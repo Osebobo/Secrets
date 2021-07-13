@@ -25,7 +25,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://localhost:27017/secretDB", {useNewUrlParser: true, useUnifiedTopology:true, useFindAndModify: false});
+mongoose.connect("mongodb://localhost:27017/secretsDB", {useNewUrlParser: true, useUnifiedTopology:true, useFindAndModify: false});
 mongoose.set("useCreateIndex", true);
 
 const userSchema = new mongoose.Schema({
